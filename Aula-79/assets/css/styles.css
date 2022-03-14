@@ -1,0 +1,37 @@
+:root{
+    --primary-color:rgb(13, 80, 134);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    outline: none;
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 1px 1rem gray;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+table{
+    width: 100%;
+}
