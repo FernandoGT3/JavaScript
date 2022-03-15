@@ -5,5 +5,4 @@
 //Fica na Pasta 'SRC' -> source(fonte)
 //Porque teremos uma outra pasta pública, onde ficarão os arquivos gerados pelo webpack
 
-alert('Olá Mundo!');
-console.log("OIOI");
+import './assets/css/styles.css'

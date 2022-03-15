@@ -22,6 +22,9 @@ module.exports = { //exportando o objeto config do webpack
                     ]
                 }
             }
+        }, {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
         }]
     },
     devtool: 'source-map' //quando acontecer algum erro, ele vai mapear no arquivo original, ao invés de ser no bundle
