@@ -23,7 +23,7 @@ app.use(meuMiddleware);
 
 app.use(routes);
 
-app.listen(3003, () => {
-    console.log('Acessar http://localhost:3003/');
+app.listen(3000, () => {
+    console.log('Acessar http://localhost:3000/');
     console.log('Servidor Executando na Porta 3003');
 });
