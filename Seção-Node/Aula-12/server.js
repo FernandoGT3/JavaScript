@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 app.use(routes);
 
-app.listen(3030, () => {
-    console.log('Acessar http://localhost:3030/');
-    console.log('Servidor Executando na Porta 3030');
+app.listen(3000, () => {
+    console.log('Acessar http://localhost:3000/');
+    console.log('Servidor Executando na Porta 3000');
 });
