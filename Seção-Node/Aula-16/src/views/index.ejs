@@ -1,0 +1,39 @@
+<%- include('includes/head') %> 
+<!-- Geralmente Partes de do HTML não serão modificadas, sempre serão as mesmas, para todas as páginas
+então podemos pegar esses trechos e separar em arquivos menores, e incluir nas outras páginas-->
+
+    <section class="container">
+        <h1>
+
+            <% if(typeof titulo !== 'undefined'){ %>
+            <%= titulo %>
+            <% } else { %>
+               O Titulo Não Foi enviado 
+            <% } %>  
+
+            <% numeros.forEach(num => { %>
+                <%= num  %> 
+            <% }) %> 
+            <!-- <%= %> tags do ejs, e pegando a chave 'titulo' do objeto-->
+            <!-- Temos a tag: <%- %>,  -->
+            <!-- Com '='- escapa caracteres, é mais seguro(não quebra template), se tiver tags no conteúdo
+            por exemplo: '<span style="color: azure;">titulo</span>', com "=", essas tags irão aparacer, já com
+            '-', as tags serão executadas-->
+            <!-- Temos a tag: <% %>, para controlar o fluxo (if, for...) -->
+            <!--  <%= %>  Imprime escapando caracteres - Mostra -->
+            <!--  <%- %>  Imprime sem escapando caracteres - Executa -->
+            <!--  <%# %> Comentário -->
+            <!-- <%#include('Caminho/Arquivo')%>Inclui Arquivo -->
+
+        </h1>
+        <p> <%= umaVariavelLocal %>   </p> <!--Disponível em Todas as Rotas, porque está num middle sem rota-->
+
+        <form class="form" action="/" method="post">
+            <label>Cliente</label>
+            <input type="text" name = "cliente">
+
+            <button>Enviar</button>
+        </form>
+    </section>
+
+<%- include('includes/footer') %> 
